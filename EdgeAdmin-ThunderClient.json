@@ -1,0 +1,139 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "Edge Admin",
+    "dateExported": "2023-08-13T07:18:07.226Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "43cd1119-0683-4ca6-96c2-2859c4ddd799",
+            "colId": "67d9975c-43c7-42bf-8af5-3af2e4510884",
+            "containerId": "",
+            "name": "https://auth.sitecorecloud.io/oauth/token (Get Access Token)",
+            "url": "https://auth.sitecorecloud.io/oauth/token",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2023-08-06T09:09:32.298Z",
+            "modified": "2023-08-13T07:16:20.432Z",
+            "headers": [
+                {
+                    "name": "content-type",
+                    "value": "application/x-www-form-urlencoded"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "audience",
+                        "value": "https://api.sitecorecloud.io"
+                    },
+                    {
+                        "name": "grant_type",
+                        "value": "client_credentials"
+                    },
+                    {
+                        "name": "client_id",
+                        "value": ""
+                    },
+                    {
+                        "name": "client_secret",
+                        "value": ""
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "5db455cb-e0ee-405f-829b-f48d43f2774d",
+            "colId": "67d9975c-43c7-42bf-8af5-3af2e4510884",
+            "containerId": "",
+            "name": "https://edge.sitecorecloud.io/api/admin/v1/cache (Clear Cache)",
+            "url": "https://edge.sitecorecloud.io/api/admin/v1/cache",
+            "method": "DELETE",
+            "sortNum": 20000,
+            "created": "2023-08-06T09:09:40.342Z",
+            "modified": "2023-08-13T07:16:35.315Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "a1fb5c97-c385-4069-b15a-afdbf5e96afb",
+            "colId": "67d9975c-43c7-42bf-8af5-3af2e4510884",
+            "containerId": "",
+            "name": "https://edge.sitecorecloud.io/api/admin/v1/content (Delete Content)",
+            "url": "https://edge.sitecorecloud.io/api/admin/v1/content",
+            "method": "DELETE",
+            "sortNum": 30000,
+            "created": "2023-08-06T09:09:53.130Z",
+            "modified": "2023-08-13T07:16:42.889Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "2edef0fe-ae5a-429a-9562-1c3bf70ea430",
+            "colId": "67d9975c-43c7-42bf-8af5-3af2e4510884",
+            "containerId": "",
+            "name": "https://edge.sitecorecloud.io/api/admin/v1/settings (Edge Settings)",
+            "url": "https://edge.sitecorecloud.io/api/admin/v1/settings",
+            "method": "GET",
+            "sortNum": 40000,
+            "created": "2023-08-06T09:13:41.419Z",
+            "modified": "2023-08-13T07:16:52.347Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "bfcad7e3-9592-4b5f-bcde-665bd81c72ad",
+            "colId": "67d9975c-43c7-42bf-8af5-3af2e4510884",
+            "containerId": "",
+            "name": "https://edge.sitecorecloud.io/api/admin/v1/webhooks/xxx (Delete Webhook)",
+            "url": "https://edge.sitecorecloud.io/api/admin/v1/webhooks/[GUID]",
+            "method": "DELETE",
+            "sortNum": 50000,
+            "created": "2023-08-06T09:53:26.071Z",
+            "modified": "2023-08-13T07:16:57.357Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "1f83b975-6849-45cc-ab23-5f681391f247",
+            "colId": "67d9975c-43c7-42bf-8af5-3af2e4510884",
+            "containerId": "",
+            "name": "https://edge.sitecorecloud.io/api/admin/v1/webhooks (List)",
+            "url": "https://edge.sitecorecloud.io/api/admin/v1/webhooks",
+            "method": "GET",
+            "sortNum": 60000,
+            "created": "2023-08-06T09:53:44.027Z",
+            "modified": "2023-08-13T07:17:01.830Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "2e0759c3-c6ce-454e-9b9f-7142036d81e5",
+            "colId": "67d9975c-43c7-42bf-8af5-3af2e4510884",
+            "containerId": "",
+            "name": "https://edge.sitecorecloud.io/api/admin/v1/webhooks (Create)",
+            "url": "https://edge.sitecorecloud.io/api/admin/v1/webhooks",
+            "method": "POST",
+            "sortNum": 70000,
+            "created": "2023-08-06T09:54:13.694Z",
+            "modified": "2023-08-13T07:17:07.461Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"label\": \"ContentUpdate\",\n  \"uri\": \"https://webhook.site/[GUID]\",\n  \"method\": \"POST\",\n  \"headers\": {\n    \"acme\": \"ContentUpdate\"\n  },\n  \"createdBy\": \"ga\",\n  \"executionMode\": \"OnUpdate\"\n}",
+                "form": []
+            },
+            "tests": []
+        }
+    ]
+}
